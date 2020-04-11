@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,user-scale=no"
+    />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to continue.
+      </strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+<script>
+  window.onload = function() {
+    // 页面开始加载时修改font-size
+    var html = document.getElementsByTagName('html')[0]
+    var oWidth =
+      document.body.clientWidth || document.documentElement.clientWidth
+    // 这里的750是指设计图的大小,自己根据实际情况改变
+    html.style.fontSize = (oWidth / 750) * 100 + 'px'
+  }
+  /* eslint-disable */
+  Function.prototype.makeMulti = function() {
+    let l = new String(this)
+    l = l.substring(l.indexOf('/*') + 3, l.lastIndexOf('*/'))
+    return l
+  }
+
+  let string = function() {
+    /* 
+                                                              bbbbbbbb
+                   kkkkkkkk                                   b::::::b            lllllll
+                   k::::::k                                   b::::::b            l:::::l
+                   k::::::k                                   b::::::b            l:::::l
+                   k::::::k                                    b:::::b            l:::::l
+      ssssssssss    k:::::k    kkkkkkkyyyyyyy           yyyyyyyb:::::bbbbbbbbb     l::::l uuuuuu    uuuuuu      eeeeeeeeeeee
+    ss::::::::::s   k:::::k   k:::::k  y:::::y         y:::::y b::::::::::::::bb   l::::l u::::u    u::::u    ee::::::::::::ee
+  ss:::::::::::::s  k:::::k  k:::::k    y:::::y       y:::::y  b::::::::::::::::b  l::::l u::::u    u::::u   e::::::eeeee:::::ee
+  s::::::ssss:::::s k:::::k k:::::k      y:::::y     y:::::y   b:::::bbbbb:::::::b l::::l u::::u    u::::u  e::::::e     e:::::e
+   s:::::s  ssssss  k::::::k:::::k        y:::::y   y:::::y    b:::::b    b::::::b l::::l u::::u    u::::u  e:::::::eeeee::::::e
+     s::::::s       k:::::::::::k          y:::::y y:::::y     b:::::b     b:::::b l::::l u::::u    u::::u  e:::::::::::::::::e
+        s::::::s    k:::::::::::k           y:::::y:::::y      b:::::b     b:::::b l::::l u::::u    u::::u  e::::::eeeeeeeeeee
+  ssssss   s:::::s  k::::::k:::::k           y:::::::::y       b:::::b     b:::::b l::::l u:::::uuuu:::::u  e:::::::e
+  s:::::ssss::::::sk::::::k k:::::k           y:::::::y        b:::::bbbbbb::::::bl::::::lu:::::::::::::::uue::::::::e
+  s::::::::::::::s k::::::k  k:::::k           y:::::y         b::::::::::::::::b l::::::l u:::::::::::::::u e::::::::eeeeeeee
+   s:::::::::::ss  k::::::k   k:::::k         y:::::y          b:::::::::::::::b  l::::::l  uu::::::::uu:::u  ee:::::::::::::e
+    sssssssssss    kkkkkkkk    kkkkkkk       y:::::y           bbbbbbbbbbbbbbbb   llllllll    uuuuuuuu  uuuu    eeeeeeeeeeeeee
+                                            y:::::y
+                                           y:::::y
+                                          y:::::y
+                                         y:::::y
+                                        yyyyyyy*/
+  }
+  console.log(string.makeMulti())
+  console.log(/* 其他信息 */)
+</script>
